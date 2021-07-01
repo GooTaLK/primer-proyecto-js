@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: rgb(61, 61, 61);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgb(206, 206, 206);
+        }
+        .empty {
+            height: 200px;
+            width: 100%;
+        }
+
+        .box {
+            text-align: center;
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: grid;
+            place-items: center;
+            margin: 0 auto;
+            border: 3px cornflowerblue solid;
+            border-radius: 20px;
+            width: 50%;
+            height: 300px;
+        }
+
+        .bg-red {
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <form id="form">
+        <input type="text" class="text">
+    </form>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="box">Hola<br>observa la consola</div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+    <div class="empty"></div>
+
+    <script>
+        const d = document;
+        // INTERSECTION OBSERVER
+        const $box = d.querySelector(".box")
+
+        function callback(entries) {
+            (entries[0].isIntersecting) ? console.log("<---") : console.log("X")
+        }
+
+        const obs = new IntersectionObserver(callback, {
+            threshold: [0.25, 0.75] // no entiendo como funciona en su forma de array :/
+        })
+
+        obs.observe($box)
+
+        // FOCUS EVENT
+        const $form = d.getElementById("form")
+        const $input = d.querySelector(".text")
+
+        d.addEventListener("mouseover", e => {
+            e.target.classList.add("bg-red")
+        }, true)
+
+        $form.addEventListener("focus", e => {
+            e.target.classList.add("bg-red")
+        }, true)
+
+        $form.addEventListener("blur", e => {
+            e.target.classList.remove("bg-red")
+        }, true)
+
+        // HAS CLASS?
+        // $box.classList === "bg-red" ? $box.textContent = "Soy rojo :(" : console.log("No quiero ser rojo D:")
+        $box.classList.contains("bg-red") ? $box.textContent = "Soy rojo :(" : console.log("No quiero ser rojo D:") // Este es correcto
+        </script>
+</body>
+</html>

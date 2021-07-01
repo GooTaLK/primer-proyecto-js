@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es" data-dark>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM ejercicios</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.min.css" />
+    <link rel="stylesheet" href="source/assets/css/que-styles.css">
+</head>
+
+<body>
+    <header class="header" data-dark-two>
+        <h1>Ejercicios DOM</h1>
+    </header>
+
+    <div class="top" id="#top"></div>
+
+    <button class="fix nav-btn hamburger hamburger--elastic" type="button" data-dark-three>
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <button class="fix scroll-top-btn" data-dark-two>⮝</button>
+
+    <button class="fix dark-light-btn" data-dark-two>🌙</button>
+
+    <nav class="nav-menu" data-dark-two>
+        <header>
+            <h3>Ejercicios DOM</h3>
+        </header>
+
+        <ul>
+            <li>
+                <a href="#section1" data-scroll-spy>Reloj y alarma por botones</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section2" data-scroll-spy>Caja de colisiones</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section3" data-scroll-spy>Cuenta regresiva</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section4" data-scroll-spy>Responsive JS</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section5" data-scroll-spy>Prueba de Responsive</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section6" data-scroll-spy>User Agent</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section7" data-scroll-spy>Detectar conexión de Internet</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section8" data-scroll-spy>Detectar web cam</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section9" data-scroll-spy>Geolocalización</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section10" data-scroll-spy>Filtro de busqueda</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section11" data-scroll-spy>Sorteo</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section12" data-scroll-spy>Deslizador responsivo</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section13" data-scroll-spy>Video inteligente</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section14" data-scroll-spy>Comentar</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section15" data-scroll-spy>Narrador</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section16" data-scroll-spy>...</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#section17" data-scroll-spy>...</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="#top">TOP</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main data-dark>
+        <section id="section1" data-scroll-spy>
+            <h2>Reloj y alarma por botones</h2>
+            <div>
+                <button type="submit" id="show-clock" class="s1-btn">Mostrar Reloj</button>
+                <button type="submit" id="hide-clock" class="s1-btn">Ocultar Reloj</button>
+                <button type="submit" id="active-alarm" class="s1-btn">Activar Alarma</button>
+                <button type="submit" id="silence-alarm" class="s1-btn">Silenciar Alarma</button>
+            </div>
+        </section>
+
+        <section id="section2" data-scroll-spy>
+            <h2>Caja de colisiones</h2>
+            <h3>Click dentro o fuera de la caja?</h3>
+            <marquee behavior="" direction="right"><a style="color: rgb(0, 145, 255);" href="https://github.com/brandonporcel/ejercicios-js" target="_blank" rel="noopener">no conocia estoooo lol</a></marquee>
+            <div class="ball-box">
+                <div class="ball"></div>
+            </div>
+        </section>
+
+        <section id="section3" data-scroll-spy>
+            <h2>Cuenta regresiva</h2>
+            <div class="countdown"></div>
+        </section>
+
+        <section id="section4" data-scroll-spy>
+            <h2>Responsive JS</h2>
+            <div id="youtube"></div>
+            <div id="gmap"></div>
+        </section>
+
+        <section id="section5" data-scroll-spy>
+            <h2>Prueba de Responsive</h2>
+            <form name="testForm" id="res-test-form">
+                <input type="url" name="tUrl" id="test-url" placeholder="URL" class="res-test-text" required>
+                <input type="number" name="tWidth" id="test-width" placeholder="Largo" class="res-test-text" required>
+                <input type="number" name="tHeight" id="test-height" placeholder="Alto" class="res-test-text" required>
+                <input type="submit" name="tOpenBtn" id="test-open-btn" value="PROBAR" class="res-test-submit">
+                <input type="button" name="tCloseBtn" id="test-close-btn" value="CERRAR" class="res-test-submit">
+            </form>
+        </section>
+
+        <section id="section6" data-scroll-spy>
+            <h2>User Agent</h2>
+            <article id="user-device"></article>
+        </section>
+
+        <section id="section7" data-scroll-spy>
+            <h2>Detectar conexión de Internet</h2>
+            <article id="disconnected"></article>
+        </section>
+
+        <section id="section8" data-scroll-spy>
+            <h2>Detectar web cam</h2>
+            <video src="" id="web-cam"></video>
+        </section>
+
+        <section id="section9" data-scroll-spy>
+            <h2>Geolocalización</h2>
+            <article id="geolocation"></article>
+        </section>
+        
+        <section id="section10" data-scroll-spy>
+            <h2>Filtro de busqueda</h2>
+            <div>
+                <input type="search" name="search-bar" class="search-bar" placeholder="Buscar...">
+            </div>
+            <div class="category-box">
+                <div class="category-cards" id="kimono" data-dark-two>
+                    <img src="./source/img/kimono-400x530.png" alt="Kimono">
+                    <p>Kimono</p>
+                </div>
+                <div class="category-cards" id="nature" data-dark-two>
+                    <img src="./source/img/arbol-200x265.png" alt="Naturaleza">
+                    <p>Naturaleza</p>
+                </div>
+                <div class="category-cards" id="ilumination" data-dark-two>
+                    <img src="./source/img/foco-200x265.png" alt="Foco">
+                    <p>Iluminación</p>
+                </div>
+                <div class="category-cards" id="nocturna" data-dark-two>
+                    <img src="./source/img/noche-200x265.png" alt="Nocturna">
+                    <p>Nocturna</p>
+                </div>
+                <div class="category-cards" id="photo" data-dark-two>
+                    <img src="./source/img/foto-200x265.png" alt="Fotografía">
+                    <p>Fotografía</p>
+                </div>
+                <div class="category-cards" id="snow" data-dark-two>
+                    <img src="./source/img/nieve-200x265.png" alt="Nieve">
+                    <p>Nieve</p>
+                </div>
+                <div class="category-cards" id="more" data-dark-two>
+                    <img src="./source/img/ventana-200x265.png" alt="Lo que sea, ósea más">
+                    <p>Más</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section11" data-scroll-spy>
+            <h2>Sorteo</h2>
+            <ul>
+                <li class="participants">Nimda</li>
+                <li class="participants">Aroh</li>
+                <li class="participants">Albah</li>
+                <li class="participants">Arap</li>
+                <li class="participants">Raguj</li>
+            </ul>
+            <div>
+                <button class="sorteo-btn">Sortear</button>
+            </div>
+        </section>
+
+        <section id="section12" data-scroll-spy>
+            <h2>Deslizador responsivo</h2>
+            <div class="slider-content">
+                <div class="slider-n">»</div>
+                <div class="slider-p">«</div>
+                <div class="slider-el slider-front">
+                    <img src="./source/img/I'm waiting for you love!.jpg">
+                </div>
+                <div class="slider-el slider-item hidden">
+                    <img src="./source/img/Twitter.jpg" class="">
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam harum architecto cupiditate. Maiores reprehenderit, quas doloribus provident culpa aliquid iusto alias neque, reiciendis molestias numquam odit et ullam dolorum ratione!</p>
+                </div>
+                <div class="slider-el slider-item hidden">
+                    <img src="./source/img/descargar.jpg" class="">
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, inventore repellendus. Ipsa corporis vitae suscipit, voluptate perspiciatis temporibus nostrum perferendis labore ipsum minima ullam exercitationem. A rerum sequi libero delectus ducimus inventore itaque dignissimos ut architecto quod? Officia, nobis vel nulla dignissimos hic deserunt, mollitia deleniti qui nostrum voluptatem quasi!</p>
+                </div>
+                <div class="slider-el slider-item hidden">
+                    <img src="./source/img/-MY R0S3_.jpg" class="">
+                    <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, rem.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section13" data-scroll-spy>
+            <h2>Video inteligente</h2>
+            <video class="auto-video" src="" controls loop muted data-auto-video></video>
+            <video class="auto-video" src="" controls loop muted data-auto-video></video>
+        </section>
+
+        <section id="section14" data-scroll-spy>
+            <h2>Comentanos</h2>
+            <h4>Envié sus comentarios</h4>
+            <!-- <form id="comment-form">
+                <input type="text" name="firstName" class="c-form c-first-name" pattern="^[A-Za-zÑñ]+(\s[A-Za-zÑñ]+)?$" required placeholder="Nombre">
+                <input type="text" name="lastName" class="c-form c-last-name" pattern="^[A-Za-zÑñ]+(\s[A-Za-zÑñ]+)?$" required placeholder="Apellido">
+                <input type="email" name="email" class="c-form c-email" pattern="^[\wÑñ-]{4,8}(\.[\wÑñ]{2,7})?@[A-Za-zÑñ]{4,8}\.[A-Za-zÑñ]{2,4}(\.[A-Za-zÑñ]{2,4})?$" required placeholder="Email">
+                <textarea name="comment" class="c-form c-comment" pattern="^.{1,255}$" required placeholder="Mensaje"></textarea>
+                <input type="submit" name="submit" class="c-submit" value="Enviar">
+            </form> -->
+
+            <form class="c-form">
+                <div class="c-form-group" id="grupo__name">
+                    <label for="name" class="c-form__label">Nombre</label>
+                    <div class="c-form__input-group">
+                        <input type="text" class="c-form__input" name="name" id="name" placeholder="John" pattern="^[A-Za-zÑñ]+(\s[A-Za-zÑñ]+)?$" required>
+                        <i class="c-form__input-validation"></i>
+                    </div>
+                    <p class="c-form__correction none">El nombre solo debe contener letras y espacios de separación.</p>
+                </div>
+
+                <div class="c-form-group" id="grupo__lastName">
+                    <label for="last-name" class="c-form__label">Apellido</label>
+                    <div class="c-form__input-group">
+                        <input type="text" class="c-form__input" name="lastName" id="last-name" placeholder="Doe" pattern="^[A-Za-zÑñ]+(\s[A-Za-zÑñ]+)?$" required>
+                        <i class="c-form__input-validation"></i>
+                    </div>
+                    <p class="c-form__correction none">El apellido solo debe contener letras y espacios de separación.</p>
+                </div>
+
+                <div class="c-form-group" id="grupo__email">
+                    <label for="email" class="c-form__label">Correo electrónico</label>
+                    <div class="c-form__input-group">
+                        <input type="email" class="c-form__input" name="email" id="email" placeholder="ejemplo@correo.com" pattern="^[\wÑñ-]{4,8}(\.[\wÑñ]{2,7})?@[A-Za-zÑñ]{4,8}\.[A-Za-zÑñ]{2,4}(\.[A-Za-zÑñ]{2,4})?$" required>
+                        <i class="c-form__input-validation"></i>
+                    </div>
+                    <p class="c-form__correction none">El correo electrónico debe ser una dirección valida.</p>
+                </div>
+
+                <div class="c-form-group" id="grupo__affair">
+                    <label for="affair" class="c-form__label">Asunto</label>
+                    <div class="c-form__input-group">
+                        <input type="text" class="c-form__input" name="affair" id="affair" placeholder="Asunto">
+                        <i class="c-form__input-validation"></i>
+                    </div>
+                </div>
+
+                <div class="c-form-group" id="grupo__comment">
+                    <label for="comment" class="c-form__label">Comentario</label>
+                    <textarea class="c-form__input c-form__textarea" name="comment"" id="comment" placeholder="Mensaje" pattern="^.{1,255}$" required></textarea>
+                    <p class="c-form__correction none">El mensaje es requerido.</p>
+                </div>
+
+                <div class="c-form-group" id="grupo__submit">
+                    <div class="c-form__submit-group">
+                        <p class="c-form__submit-error none">Rellene correctamente los campos por favor.</p>
+                        <input type="submit" class="c-form__submit-btn" value="Enviar">
+                        <p class="c-form__submit-succes hidden">Comentario enviado exitosamente</p>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section id="section15" data-scroll-spy>
+            <h2>Narrador</h2>
+            <div class="narrator">
+                <select class="narrator__select">
+                    <option value="">Voces de tu sistema</option>
+                </select>
+                <br>
+                <textarea class="narrator__textarea" name="" id="" placeholder="ArEA"></textarea>
+                <br>
+                <button class="narrator__btn">Leer</button>
+                <br>
+                <h3>Lo mejorare B(</h3>
+            </div>
+        </section>
+
+        <section id="section16" data-scroll-spy>
+            <h2>...</h2>
+        </section>
+
+        <section id="section17" data-scroll-spy>
+            <h2>...</h2>
+        </section>
+    </main>
+
+    <script src="/source/assets/js/index.js" type="module"></script>
+</body>
+</html>
